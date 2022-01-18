@@ -1,0 +1,38 @@
+.html-logo {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;	
+	border: 2px solid black;
+}
+
+.background-left {
+	background-color: #e44f26;
+	display: flex;
+	position: relative;
+	height: 280px;
+	width:120px;
+}
+
+.background-right {
+	background-color: #e44f26;
+	display: flex;
+	position: relative;
+	height: 280px;
+	width:120px;
+	transform-origin-bottom-right: skewY(20deg);
+}
+
+.shading {
+	position: absolute;
+	background-color: #f1662a;
+	width: 90px;
+	height: 230px;
+	top: 25px;
+}
+
+.background-right p {
+	color: white;
+	font-size: 200px;
+	position: absolute;
+}
