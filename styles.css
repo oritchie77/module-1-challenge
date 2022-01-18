@@ -1,26 +1,29 @@
+html {
+	font-family: sans-serif;
+}
+
 .html-logo {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;	
 	border: 2px solid black;
 }
 
 .background-left {
 	background-color: #e44f26;
-	display: flex;
 	position: relative;
 	height: 280px;
 	width:120px;
+	transform: skew(0deg, 10deg);
+	clip-path: polygon(0 7%, 100% 0, 100% 100%, 20% 100%);
 }
 
 .background-right {
 	background-color: #e44f26;
-	display: flex;
 	position: relative;
 	height: 280px;
 	width:120px;
-	transform-origin-bottom-right: skewY(20deg);
+	transform: skew(0deg, -10deg);
+	clip-path: polygon(0 0, 100% 7%, 80% 100%, 0% 100%);
 }
 
 .shading {
@@ -29,10 +32,15 @@
 	width: 90px;
 	height: 230px;
 	top: 25px;
+	clip-path: polygon(0 0, 100% 7%, 80% 100%, 0% 100%);
 }
 
 .background-right p {
 	color: white;
-	font-size: 200px;
+	font-size: 300px;
 	position: absolute;
+	line-height: 0;
+	top: -150px;
+	left:-50px;
+	
 }
