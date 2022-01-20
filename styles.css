@@ -1,46 +1,64 @@
 html {
-	font-family: sans-serif;
+	font-family: "Montserrat", sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
 }
 
 .html-logo {
 	display: flex;
-	flex-direction: row;
+	justify-content: center;
 	border: 2px solid black;
+	width: 300px;
 }
 
 .background-left {
 	background-color: #e44f26;
 	position: relative;
-	height: 280px;
-	width:120px;
+	height: 340px;
+	width:150px;
 	transform: skew(0deg, 10deg);
-	clip-path: polygon(0 7%, 100% 0, 100% 100%, 20% 100%);
+	clip-path: polygon(0 8%, 100% 0, 100% 100%, 20% 100%);
 }
 
 .background-right {
 	background-color: #e44f26;
 	position: relative;
-	height: 280px;
-	width:120px;
+	height: 340px;
+	width:150px;
 	transform: skew(0deg, -10deg);
-	clip-path: polygon(0 0, 100% 7%, 80% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 8%, 80% 100%, 0% 100%);
 }
 
 .shading {
 	position: absolute;
 	background-color: #f1662a;
-	width: 90px;
-	height: 230px;
+	width: 125px;
+	height: 290px;
 	top: 25px;
 	clip-path: polygon(0 0, 100% 7%, 80% 100%, 0% 100%);
 }
 
-.background-right p {
-	color: white;
-	font-size: 300px;
+.right-side {
+	background-color: #ffffff;
+	height: 210px;
+	width: 95px;
 	position: absolute;
-	line-height: 0;
-	top: -150px;
-	left:-50px;
+	z-index: 1;
+	transform: translate(50%, 30%);
+}
+
+.left-side {
+	background-color: #ebebeb;
+	height: 210px;
+	width: 95px;
+	position: absolute;
+	z-index: 1;
+	transform: translate(-50%, 30%);
+}
+
+.top-right {
 	
 }
